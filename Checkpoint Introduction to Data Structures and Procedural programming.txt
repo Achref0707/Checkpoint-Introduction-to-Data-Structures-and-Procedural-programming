@@ -1,0 +1,20 @@
+function trait(a,b){
+   var sum =0
+   for(let i=0;i<a.length;i++)
+     { if(!(b.includes(a[i]))) 
+        sum = sum+a[i]
+     }
+   for(let i=0;i<b.length;i++)
+     { if(!(a.includes(b[i]))) 
+        sum = sum+b[i]
+     }
+return sum      
+ }
+ 
+ 
+
+var t1=[1,2,3,4]
+var t2=[5,6,7,8,9]
+console.log(trait(t1,t2)) 
+
+   

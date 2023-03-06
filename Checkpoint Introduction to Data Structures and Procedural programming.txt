@@ -1,3 +1,6 @@
+problem 1 :
+
+
 function trait(a,b){
    var sum =0
    for(let i=0;i<a.length;i++)
@@ -17,4 +20,34 @@ var t1=[1,2,3,4]
 var t2=[5,6,7,8,9]
 console.log(trait(t1,t2)) 
 
-   
+
+
+problem 2:
+ 
+
+function dot_product(v1, v2) {
+let ps = 0;
+for (let i = 0; i < v1.length; i++) {
+ps += v1[i] * v2[i];
+}
+return ps;
+}
+
+function is_orthogonal(v1, v2) {
+let ps = dot_product(v1, v2);
+
+if (ps == 0) {
+return true;
+} else {
+return false;
+}
+}
+
+let vector1 = [2, 2, 2];
+let vector2 = [-2, -2, -2];
+
+if (is_orthogonal(vector1, vector2)) {
+console.log("Vectors are orthogonal");
+} else {
+console.log("Vectors are not orthogonal");
+}
